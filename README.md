@@ -75,9 +75,9 @@ The framework is engineered for reproducibility and portability: every path is *
 |-- paramters_sampling.py         # PierParams (Pydantic) + LHSSampler + generate_pier_samples()
 |-- strucrure_modeling.py         # run_one_earthquake(): modeling -> gravity -> seismic time history
 |-- data_generation.py            # Three-span continuous bridge parametric dataset generator (CLI)
-|-- CNN.py                        # CNN surrogate: train / evaluate on the generated dataset
-|-- LSTM.py                       # LSTM surrogate: sequence model of seismic demand
-|-- Transformer.py                # Enhanced Transformer surrogate (CNN acc-encoder + Transformer)
+|-- cnn_model.py                        # CNN surrogate: train / evaluate on the generated dataset
+|-- lstm_model.py                       # LSTM surrogate: sequence model of seismic demand
+|-- transformer_model.py                # Enhanced Transformer surrogate (CNN acc-encoder + Transformer)
 |-- utils/                        # Record.AccRecord (gm reader) + progress helpers
 `-- waves/                        # Ground-motion acceleration records: 1.acc, 2.acc, ... (dt = 0.02 s)
 ```
